@@ -47,6 +47,14 @@ export const styles = {
     },
     teste:{
         width: "100%"
-    }
+    },
+    btnAdd:{
+        position: "absolute",
+        bottom: 12,
+    },
+    btnAddImage:{
+        width: 50,
+        height: 50,
+    },
     
 }
