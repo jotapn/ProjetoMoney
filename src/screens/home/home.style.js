@@ -21,7 +21,7 @@ export const styles = {
         marginTop: 10,
         flexDirection: "row",
         justifyContent: "space-between",
-
+        
     },
     dashboardValor: {
         color: COLORS.white,
@@ -32,16 +32,21 @@ export const styles = {
     dashboardText: {
         color: COLORS.white,
         fontSize: FONT_SIZE.sm,
-
+        
     },
     dashboardImage: {
         width: 35,
         height: 60,
     },
     despesasTitulo:{
+        width: "100%",
         fontSize: FONT_SIZE.sm,
         color: COLORS.dark_gray,
         marginTop: 15,
         fontWeight: "bold",
+    },
+    teste:{
+        width: "100%"
     }
+    
 }
