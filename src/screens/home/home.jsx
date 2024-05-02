@@ -7,13 +7,13 @@ import { ScrollView } from "react-native";
 import { TouchableOpacity } from "react-native-web";
 
 //function Home() {}
-const Home = () => {
+const Home = (props) => {
 
     const [total, setTotal] = useState(0);
     const [despesas, setDespesas] = useState([]);
 
     const openDespesa = (id) => {
-        console.log("Cadastrar despesa")
+        props.navigation.navigate("despesas")
     }
 
     const listarDespesas = () => {
@@ -61,6 +61,7 @@ const Home = () => {
                                         categoria={desp.categoria}
                                         descricao={desp.descricao}
                                         valor = {desp.valor}
+                                        onClick={openDespesa}
                                         />
                     })
                 }

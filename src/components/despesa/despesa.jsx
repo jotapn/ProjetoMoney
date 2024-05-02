@@ -1,9 +1,10 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Touchable } from "react-native";
 import {styles} from "./despesa.style.js"
 import icons from "../../constants/icons.js";
+import { TouchableOpacity } from "react-native-web";
 
 const Despesas = (props) => {
-    return (
+    return (<TouchableOpacity onPress={()=> props.onClick(0)}>
     <View style={styles.despesa}>
             <View style={styles.containerIcon}>
                 <Image style={styles.despesaIcon} source={props.icon}/>
@@ -21,6 +22,7 @@ const Despesas = (props) => {
                 
             </View>
     </View>
+    </TouchableOpacity>
 
     )
 }

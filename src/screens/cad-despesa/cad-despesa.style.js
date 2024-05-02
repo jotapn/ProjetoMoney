@@ -21,6 +21,11 @@ export const styles = {
         padding: 5,
         placeholderTextColor: COLORS.medium_gray
     },
+    inputPicker: {
+        fontSize: FONT_SIZE.md,
+        borderBottomColor: COLORS.gray,
+        borderBottomWidth: 2,
+    },
     inputText:{
         fontSize: FONT_SIZE.md,
         borderBottomColor: COLORS.gray,
